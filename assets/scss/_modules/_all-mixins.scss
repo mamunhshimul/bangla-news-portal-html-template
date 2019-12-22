@@ -1,0 +1,13 @@
+@mixin aw3_transition($myproperty) {
+  -webkit-transition: $myproperty;
+  -moz-transition: $myproperty;
+  -ms-transition: $myproperty;
+  -o-transition: $myproperty;
+  transition: $myproperty;
+}
+
+@mixin aw3_vline($color) {
+  height: 1px;
+  width: 96%;
+  background-color: $color;
+}

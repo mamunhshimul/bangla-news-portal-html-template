@@ -1,0 +1,65 @@
+.top-section-one{
+
+    .top-section-big{
+         position: relative; 
+
+
+         h3{
+
+				position: absolute;
+				bottom: 15px;
+				left: 15px; 
+         }
+     
+     }
+     .top-section-right{
+
+     }
+ 
+     .nav-tabs {
+         border: 0px; 
+     }
+     .nav-tabs .nav-link{
+
+     	background-color: $title_color;
+     	color: $white_color;
+        border: 0px solid $primary_color;
+  
+
+     } 
+     .nav-link:focus {
+
+         text-decoration: none; 
+         color: $gray_color;
+    } 
+   .tab-title-wpnews{
+      font-size:22px;
+   }
+
+
+}
+
+
+
+ 
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+    width:48%;
+    text-align: center;
+} 
+ 
+.nav-link .active{
+
+    background-color: red!important;
+    z-index: 9999;
+
+}
+ 
+
+
+ 
+
+
+
+
