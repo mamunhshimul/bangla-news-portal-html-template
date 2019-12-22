@@ -132,12 +132,10 @@
           .fly-menu-top{
 
             margin-top: 20px;
-
-              display: flex;
+ 
 
               ul{
-                    display: inline-block; 
-                    width: 20%; 
+                    display: inline-block;  
                     text-align: center;
 
                  li{   
@@ -158,6 +156,8 @@
 }
 .fly-menu-bottom{
 
+   display: flex;
+
   padding:20px;
 
    span{
@@ -170,8 +170,6 @@
    }
 
 }
-
-
 
 } 
 
@@ -188,8 +186,6 @@
         color: #ffff; 
         text-align: center; 
         padding-top:7px;
- 
- 
     }
 
 }
@@ -200,11 +196,89 @@
        li{ 
           font-size: 13px;
       }
+}
 
+.logo-area-one{
+
+
+  h5{
+
+   font-size: 15px;
+
+  }
+  
 }
  
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  
+  .main-menu-one { 
+
+ 
+      margin:15px 0 0 25px;
+
+       ul{
+
+         li{
+
+            a{
+              padding:5px 3px;
+              font-size: 17px; 
+            }
+         }
+       }
+  }
+
+     .logo-area-one{
+
+      h5{
+
+       margin-left: 5px;
+       }  
+   }
+
+  .fly-menu .fly-menu-top{
+
+    margin-top: 5px;
+  }
 
 
+} 
 
+
+@media only screen and (max-width: 767px) {
+
+
+  .fly-menu .fly-menu-wrapper{
+
+     height: 100%;
+  }
+  
+  .main-menu-one { 
+
+      display: none;
+  }
+
+  .fly-menu .fly-menu-top{
+     padding:10px 0px;
+
+     ul{
+
+       li{
+
+         a{
+
+           padding:1px; 
+           color: red;
+           text-align: center;
+           font-size: 14px;
+           margin: 5px;
+         }
+       }
+     }
+  }
+
+  }
+ 
+ 
 
 
