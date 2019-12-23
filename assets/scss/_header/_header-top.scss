@@ -1,10 +1,5 @@
- 
-
 .header-top-one{
-
-
-
-  
+ 
 }
 .fly-menu-top{ 
   
@@ -16,7 +11,6 @@
     }
 }
 .logo-area-one {
-
     a {
 
         h1 {
@@ -156,14 +150,11 @@
 }
 .fly-menu-bottom{
 
-   display: flex;
-
-  padding:20px;
+    padding:20px;
 
    span{
 
      margin-left: 50px;
-
    }
    i{
      margin-right:10px;
@@ -213,9 +204,7 @@
   
   .main-menu-one { 
 
- 
       margin:15px 0 0 25px;
-
        ul{
 
          li{
@@ -277,7 +266,20 @@
      }
   }
 
+
+    .header-bottom-one{
+       
+       .date-area{
+             
+            p{
+                 
+               font-size: 14px;
+               text-align: justify;  
+            }
+       }
   }
+
+}
  
  
 

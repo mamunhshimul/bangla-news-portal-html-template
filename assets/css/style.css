@@ -85,6 +85,22 @@ html, body {
   bottom: 15px;
   left: 15px; }
 
+.featured-post-img-sm {
+  height: 80px;
+  overflow: hidden; }
+  .featured-post-img-sm img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover; }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .featured-post-img-sm {
+    height: 80px;
+    overflow: hidden; }
+    .featured-post-img-sm img {
+      width: 100%;
+      height: 65px;
+      object-fit: cover; } }
 .horizontal-ad-section img {
   width: 100%; }
 
@@ -175,7 +191,6 @@ html, body {
     border-bottom: 1px solid #cccccc;
     padding: 30px; }
   .fly-menu .fly-menu-bottom {
-    display: flex;
     padding: 20px; }
     .fly-menu .fly-menu-bottom span {
       margin-left: 50px; }
@@ -226,7 +241,11 @@ html, body {
       color: red;
       text-align: center;
       font-size: 14px;
-      margin: 5px; } }
+      margin: 5px; }
+
+  .header-bottom-one .date-area p {
+    font-size: 14px;
+    text-align: justify; } }
 .categories-sec .cat-title {
   font-size: 1.3rem;
   margin-bottom: 0.7rem;
@@ -270,6 +289,10 @@ html, body {
   bottom: 0;
   bottom: 15px;
   left: 15px; }
+
+.categories-sec-four .featured-post-content {
+  font-size: 14px;
+  color: red; }
 
 .categories-sec-eight .featured-post-sm {
   margin: 0 2px 5px 2px;
@@ -318,10 +341,25 @@ html, body {
   width: 48%;
   text-align: center; }
 
-.nav-link .active {
-  background-color: red !important;
-  z-index: 9999; }
+.nav-tabs .nav-link {
+  border-radius: 0px; }
+.nav-tabs a.nav-link.active.top-tab-title {
+  background: #181818 !important;
+  color: #777777; }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .top-section-one .featured-post-title:first-child {
+    margin: 0; }
+  .top-section-one .top-sec-ipad:nth-child(1) {
+    padding-right: 1px !important; }
+  .top-section-one .top-sec-ipad:nth-child(2) {
+    padding-left: 5px !important; }
+  .top-section-one .top-sec-middle .featured-post-title {
+    font-size: 15px; }
+  .top-section-one .tab-content .tab-title-wpnews h3 {
+    font-size: 14px; }
+  .top-section-one .margin-bt {
+    padding-right: 0px; } }
 .gallery-area {
   background-color: #cccccc;
   padding-top: 50px; }
