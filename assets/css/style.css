@@ -66,6 +66,9 @@ html, body {
 .margin-auto {
   margin: auto; }
 
+.featured-img {
+  position: relative; }
+
 .featured-post-title {
   margin: 10px 0 5px 0; }
 
@@ -276,27 +279,34 @@ html, body {
     top: 50%;
     left: 50%;
     right: 50%;
-    bottom: 50%; }
+    bottom: 50%;
+    transform: translate(-50%, -50%); }
 
 .categories-sec-one ul {
   list-style: square;
   margin-left: 17px; }
 
-.categories-sec-three .featured-img {
+.categories-sec-five .featured-img {
   position: relative; }
-.categories-sec-three .featured-post-title {
+.categories-sec-five .featured-post-title {
   position: absolute;
   bottom: 0;
   bottom: 15px;
   left: 15px; }
 
-.categories-sec-four .featured-post-content {
-  font-size: 14px;
-  color: red; }
-
-.categories-sec-eight .featured-post-sm {
+.categories-sec-six .featured-post-sm {
   margin: 0 2px 5px 2px;
-  padding: 5px; }
+  padding: 5px;
+  background-color: #F0F0ED; }
+  .categories-sec-six .featured-post-sm img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover; }
+
+.gallery-area .header-slider-thumb {
+  width: 100%;
+  height: 370px;
+  object-fit: cover; }
 
 .vide-post-img {
   background-color: gray;
@@ -311,13 +321,67 @@ html, body {
 
 .categories-content-bottom {
   padding: 50px 0;
-  /*background-color: #F0F0ED;*/
   background-color: #cccccc; }
   .categories-content-bottom .featured-post-title {
     background-color: #fff;
     padding: 10px 5px;
     margin: 5px 0 !important; }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .categories-sec .featured-video-post h3 {
+    position: absolute;
+    bottom: 2px;
+    left: 10px; }
+  .categories-sec .featured-video-left h3 {
+    font-size: 15px; }
+
+  .categories-sec-four p {
+    font-size: 14px; }
+  .categories-sec-four .featured-post-title {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    font-size: 15px; }
+
+  .categories-sec-six .featured-post-details p {
+    font-size: 14px; }
+  .categories-sec-six .featured-post-sm {
+    margin: 0 2px 5px 2px;
+    padding: 0px;
+    background-color: #F0F0ED;
+    position: relative; }
+    .categories-sec-six .featured-post-sm img {
+      width: 100%;
+      height: 70px;
+      object-fit: cover; }
+    .categories-sec-six .featured-post-sm .featured-post-title-sm {
+      position: absolute;
+      bottom: 2px;
+      font-size: 12px; }
+  .categories-sec-six .post-title-inside-box {
+    margin-bottom: 5px; }
+    .categories-sec-six .post-title-inside-box h3 {
+      font-size: 15px;
+      left: 5px;
+      bottom: 5px; }
+
+  .gallery-area .header-slider-thumb {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; }
+
+  .categories-content-bottom .featured-post-title {
+    font-size: 15px; }
+
+  .categories-sec .side-bar .featured-post-details-sm {
+    font-size: 13px; } }
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
 .top-section-one .top-section-big {
   position: relative; }
   .top-section-one .top-section-big h3 {
@@ -358,6 +422,27 @@ html, body {
     font-size: 15px; }
   .top-section-one .tab-content .tab-title-wpnews h3 {
     font-size: 14px; }
+  .top-section-one .margin-bt {
+    padding-right: 0px; } }
+/*    Mobile Layout: 320px.
+    Gutters: 24px.
+    Outer margins: 34px.
+    Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+@media only screen and (max-width: 767px) {
+  .top-section-one .featured-post-title:first-child {
+    margin: 0; }
+  .top-section-one .top-sec-ipad:nth-child(1) {
+    padding-right: 1px !important; }
+  .top-section-one .top-sec-ipad:nth-child(2) {
+    padding-left: 5px !important; }
+  .top-section-one .top-sec-middle .featured-post-title {
+    font-size: 15px; }
+  .top-section-one .tab-content .tab-title-wpnews h3 {
+    font-size: 20px;
+    margin-top: 5px; }
   .top-section-one .margin-bt {
     padding-right: 0px; } }
 .gallery-area {

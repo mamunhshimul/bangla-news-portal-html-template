@@ -107,3 +107,61 @@
      }
      
 }
+
+
+/*    Mobile Layout: 320px.
+    Gutters: 24px.
+    Outer margins: 34px.
+    Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+  .top-section-one{
+            
+      .featured-post-title:first-child{ 
+         margin: 0;
+      } 
+        .top-sec-ipad:nth-child(1){
+              padding-right: 1px!important;
+
+        }
+        .top-sec-ipad:nth-child(2){
+              padding-left: 5px!important;           
+        }
+
+        .top-sec-middle{
+           
+
+           .featured-post-title{ 
+              font-size: 15px;
+           } 
+        }
+
+        .tab-content{
+            
+            .tab-title-wpnews{
+
+                h3{ 
+
+                  font-size: 20px;
+                  margin-top: 5px;
+                       
+                }
+                 
+           }
+           .tab-thumbs-wpnews{}
+ 
+
+        } 
+        .margin-bt{
+          padding-right:0px;
+        }
+
+   
+     }
+
+
+}
