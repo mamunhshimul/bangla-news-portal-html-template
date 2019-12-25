@@ -805,7 +805,7 @@
                     <div class="featured-img">
                     <img src="https://via.placeholder.com/450x220" alt="wpnews" class="img-fluid img-thumbnail">
                     </div>
-                    <h3>ছেলে হত্যার বিচার দেখে যেতে পারলেন না অধ্যাপক অজয় রায়.</h3> 
+                    <h3 class="featured-post-title">ছেলে হত্যার বিচার দেখে যেতে পারলেন না অধ্যাপক অজয় রায়.</h3> 
                   </a>
 
                   <div class="featured-post-details">
@@ -868,7 +868,7 @@
                     <div class="featured-img">
                     <img src="https://via.placeholder.com/450x220" alt="wpnews" class="img-fluid img-thumbnail">
                     </div>
-                    <h3>ছেলে হত্যার বিচার দেখে যেতে পারলেন না অধ্যাপক অজয় রায়.</h3> <!--<?php echo wp_trim_words( get_the_title(), 5 ); ?>--> 
+                    <h3 class="featured-post-title">ছেলে হত্যার বিচার দেখে যেতে পারলেন না অধ্যাপক অজয় রায়.</h3> <!--<?php echo wp_trim_words( get_the_title(), 5 ); ?>--> 
                   </a>
 
                   <div class="featured-post-details">
@@ -929,11 +929,11 @@
             </div><!--/categories-sec-three-->
             <div class="categories-sec-four">            
               <div class="row">
-                <div class="col-md-12 p-0">
+                <div class="col-md-12 p-0 mobile_1">
                   <h2 class="cat-title">খেলা</h2>
                   <div class="row">
 
-                    <div class="col-xl-7 col-md-6 pr-1">
+                    <div class="col-xl-7 col-md-6 pr-1 mobile_1">
                       <div class="featured-img">
                        <img src="https://via.placeholder.com/500x300" alt="wpnews" class="img-fluid img-thumbnail">
                         <h3 class="post-title-inside-title">ছেলে হত্যার বিচার দেখে যেতে পারলেন না অধ্যাপক অজয় রায়.</h3>
@@ -950,7 +950,7 @@
                      </div>
                     </div>
 
-                    <div class="col-xl-5 col-md-6 pr-4">
+                    <div class="col-xl-5 col-md-6 pr-4 mobile_1">
                        <div class="row">
                           <div class="col-md-6 col-6 p-1">
                             <div class="featured-img">
@@ -958,7 +958,7 @@
                               <h3 class="post-title-inside-title">ছেলে হত্যার বিচার দেজয় রায়.</h3>   
                             </div>
                          </div>
-                          <div class="col-md-6 col-6 p-1">
+                          <div class="col-md-6 col-6 p-1  ">
                             <div class="featured-img">
                               <img src="https://via.placeholder.com/240x190" alt="wpnews" class="img-fluid img-thumbnail">
                               <h3 class="post-title-inside-title">ছেলে হত্যার বিচার দেজয় রায়.</h3>   
@@ -995,7 +995,7 @@
                   </div><!--./row-->
 
 
-                </div><!--/.col-md-7--> 
+                </div><!--/.col-md-12--> 
  
               </div>
             </div><!--/categories-sec-four-->
@@ -1065,7 +1065,8 @@
 
           </div>
           <div class="col-md-3">
-              <div class="side-bar"> 
+            <div class="side-bar">  
+              <div class="wp-news_widget"> 
                   <div class="row"> 
                        <div class="col-md-12 pt-1">
                               <h2 class="cat-title">এক্সক্লুসিভ</h2>
@@ -1113,8 +1114,8 @@
                               
                        </div> 
                   </div>
-              </div><!--side-bar--> 
-              <div class="side-bar"> 
+              </div><!--wp-news_widget--> 
+              <div class="wp-news_widget"> 
                   <div class="row"> 
                        <div class="col-md-12">
                               <h2 class="cat-title">বিজ্ঞান ও প্রযুক্তি</h2>
@@ -1184,8 +1185,8 @@
                               
                        </div> 
                   </div>
-              </div><!--side-bar-->
-              <div class="side-bar"> 
+              </div><!--wp-news_widget-->
+              <div class="wp-news_widget"> 
                   <div class="row"> 
                        <div class="col-md-12">
                               <h2 class="cat-title">এক্সক্লুসিভ</h2>
@@ -1233,8 +1234,8 @@
                               
                        </div> 
                   </div>
-              </div><!--side-bar-->
-              <div class="side-bar"> 
+              </div><!--wp-news_widget-->
+              <div class="wp-news_widget"> 
                   <div class="row"> 
                        <div class="col-md-12">
                               <h2 class="cat-title">বিজ্ঞান ও প্রযুক্তি</h2>
@@ -1304,15 +1305,81 @@
                               
                        </div> 
                   </div>
-              </div><!--side-bar-->
-              <div class="side-bar">  
-                  <div id="accordion">
+              </div><!--wp-news_widget-->
+          </div><!--side-bar-->
  
-  <div class="card">
-     <div class="cat-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">বিজ্ঞান ও প্রযুক্তি</div>
 
-    <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-       <div class="row"> 
+ <div class="side-bar_mobile"> 
+  <div id="accordion"> 
+    <div class="card wp-news_widget">
+      <div class="cat-title" id="headingTwo"> 
+          <div class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <i class="fa" aria-hidden="true"></i>
+             এক্সক্লুসিভ
+          </div>
+ 
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="row"> 
+                       <div class="col-md-12 pt-1"> 
+                              <div class="featured-img">
+                              <img class="img-fluid img-thumbnail" src="https://via.placeholder.com/300x160" alt="firezone">
+                              </div>            
+                              <p class="featured-post-content">
+                                জাতিসংঘের শিক্ষা, বিজ্ঞান ও সাংস্কৃতিক সংস্থা 
+                                (ইউনেস্কো) আগামী বছর বাংলাদেশের সঙ...
+                              </p>
+                              <a href="#" class="featured-more-posts">বিস্তারিত</a>
+                        </div>
+                         <div class="col-md-12">
+                              
+                           <a href="post.html">
+                              <div class="row margin-bt">  
+                              <div class="col-xl-5 col-md-6"> 
+                              <div class="featured-post-img-sm">  
+                              <img src="https://via.placeholder.com/120x80" alt="wpnews" class="img-fluid img-thumbnail">
+                              </div>
+                              </div>     
+                              <div class="col-xl-7 col-md-6 padding-l-z pr-1"> 
+                              <div class="featured-post-details-sm">
+                                 সতর্ক থাকুন যাতে কোন শিশু ও নারী নির্যাতিত না হয়: প্রধানমন্ত্রী
+                              </div>
+                              </div>     
+                              </div> 
+                            </a>
+                              
+                            <a href="post.html">
+                              <div class="row margin-bt">  
+                              <div class="col-xl-5 col-md-6"> 
+                              <div class="featured-post-img-sm">  
+                              <img src="https://via.placeholder.com/120x80" alt="wpnews" class="img-fluid img-thumbnail">
+                              </div>
+                              </div>     
+                              <div class="col-xl-7 col-md-6 padding-l-z pr-1"> 
+                              <div class="featured-post-details-sm">
+                               সতর্ক থাকুন যাতে কোন শিশু ও নারী নির্যাতিত না হয়: প্রধানমন্ত্রী
+                              </div>
+                              </div>     
+                              </div> 
+                            </a>
+                            <a href="#" class="featured-more-posts">আরও খবর>> </a>
+                              
+                       </div> 
+                  </div>
+ 
+        
+      </div><!--collapsebody-->
+    </div><!--/.wp-news_widget--> 
+    <div class="card wp-news_widget">
+      <div class="cat-title" id="headingThree"> 
+          <div class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <i class="fa" aria-hidden="true"></i>
+            বিজ্ঞান ও প্রযুক্তি
+          </div>
+ 
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion"> 
+                  <div class="row">  
                          <div class="col-md-12">
                               
                            <a href="post.html">
@@ -1376,43 +1443,148 @@
                             </a>
                             <a href="#" class="featured-more-posts">আরও খবর>> </a>
                               
-                       </div>   
-
-       </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                       </div> 
+                  </div>
       </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    </div><!--/.wp-news_widget--> 
+    <div class="card wp-news_widget">
+      <div class="cat-title" id="headingFour"> 
+          <div class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <i class="fa" aria-hidden="true"></i>
+            এক্সক্লুসিভ
+          </div>
+ 
       </div>
-    </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion"> 
+                  <div class="row"> 
+                       <div class="col-md-12"> 
+                              <div class="featured-img">
+                              <img class="img-fluid img-thumbnail" src="https://via.placeholder.com/300x160" alt="firezone">
+                              </div>            
+                              <p class="featured-post-content">
+                              জাতিসংঘের শিক্ষা, বিজ্ঞান ও সাংস্কৃতিক সংস্থা 
+                              (ইউনেস্কো) আগামী বছর বাংলাদেশের সঙ...
+                              </p>
+                              <a href="#" class="featured-more-posts">বিস্তারিত</a>
+                        </div>
+                         <div class="col-md-12">
+                              
+                           <a href="post.html">
+                              <div class="row margin-bt">  
+                              <div class="col-xl-5 col-md-6"> 
+                              <div class="featured-post-img-sm">  
+                              <img src="https://via.placeholder.com/120x80" alt="wpnews" class="img-fluid img-thumbnail">
+                              </div>
+                              </div>     
+                              <div class="col-xl-7 col-md-6 padding-l-z pr-1"> 
+                              <div class="featured-post-details-sm">
+                                 সতর্ক থাকুন যাতে কোন শিশু ও নারী নির্যাতিত না হয়: প্রধানমন্ত্রী
+                              </div>
+                              </div>     
+                              </div> 
+                            </a>
+                              
+                           <a href="post.html">
+                              <div class="row margin-bt">  
+                              <div class="col-xl-5 col-md-6"> 
+                              <div class="featured-post-img-sm">  
+                              <img src="https://via.placeholder.com/120x80" alt="wpnews" class="img-fluid img-thumbnail">
+                              </div>
+                              </div>     
+                              <div class="col-xl-7 col-md-6 padding-l-z pr-1"> 
+                              <div class="featured-post-details-sm">
+                                 সতর্ক থাকুন যাতে কোন শিশু ও নারী নির্যাতিত না হয়: প্রধানমন্ত্রী
+                              </div>
+                              </div>     
+                              </div> 
+                            </a>
+                            <a href="#" class="featured-more-posts">আরও খবর>> </a>
+                              
+                       </div> 
+                  </div>
+      </div>
+    </div><!--/.wp-news_widget--> 
+    <div class="card wp-news_widget">
+      <div class="cat-title" id="headingFive"> 
+          <div class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <i class="fa" aria-hidden="true"></i>
+            বিজ্ঞান ও প্রযুক্তি
+          </div>
+ 
+      </div>
+      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion"> 
+                  <div class="row">  
+                         <div class="col-md-12">
+                              
+                           <a href="post.html">
+                              <div class="row margin-bt">  
+                              <div class="col-xl-5 col-md-6"> 
+                              <div class="featured-post-img-sm">  
+                              <img src="https://via.placeholder.com/120x80" alt="wpnews" class="img-fluid img-thumbnail">
+                              </div>
+                              </div>     
+                              <div class="col-xl-7 col-md-6 padding-l-z pr-1"> 
+                              <div class="featured-post-details-sm">
+                                 সতর্ক থাকুন যাতে কোন শিশু ও নারী নির্যাতিত না হয়: প্রধানমন্ত্রী
+                              </div>
+                              </div>     
+                              </div> 
+                            </a>
+                              
+                           <a href="post.html">
+                              <div class="row margin-bt">  
+                              <div class="col-xl-5 col-md-6"> 
+                              <div class="featured-post-img-sm">  
+                              <img src="https://via.placeholder.com/120x80" alt="wpnews" class="img-fluid img-thumbnail">
+                              </div>
+                              </div>     
+                              <div class="col-xl-7 col-md-6 padding-l-z pr-1"> 
+                              <div class="featured-post-details-sm">
+                                 সতর্ক থাকুন যাতে কোন শিশু ও নারী নির্যাতিত না হয়: প্রধানমন্ত্রী
+                              </div>
+                              </div>     
+                              </div> 
+                            </a>
+                              
+                           <a href="post.html">
+                              <div class="row margin-bt">  
+                              <div class="col-xl-5 col-md-6"> 
+                              <div class="featured-post-img-sm">  
+                              <img src="https://via.placeholder.com/120x80" alt="wpnews" class="img-fluid img-thumbnail">
+                              </div>
+                              </div>     
+                              <div class="col-xl-7 col-md-6 padding-l-z pr-1"> 
+                              <div class="featured-post-details-sm">
+                                 সতর্ক থাকুন যাতে কোন শিশু ও নারী নির্যাতিত না হয়: প্রধানমন্ত্রী
+                              </div>
+                              </div>     
+                              </div> 
+                            </a>
+                              
+                           <a href="post.html">
+                              <div class="row margin-bt">  
+                              <div class="col-xl-5 col-md-6"> 
+                              <div class="featured-post-img-sm">  
+                              <img src="https://via.placeholder.com/120x80" alt="wpnews" class="img-fluid img-thumbnail">
+                              </div>
+                              </div>     
+                              <div class="col-xl-7 col-md-6 padding-l-z pr-1"> 
+                              <div class="featured-post-details-sm">
+                                 সতর্ক থাকুন যাতে কোন শিশু ও নারী নির্যাতিত না হয়: প্রধানমন্ত্রী
+                              </div>
+                              </div>     
+                              </div> 
+                            </a>
+                            <a href="#" class="featured-more-posts">আরও খবর>> </a>
+                              
+                       </div> 
+                  </div>
+      </div>
+    </div><!--/.wp-news_widget-->
   </div>
-</div>
-              </div>  
-           </div>
+ </div><!--/.side-bar_mobile--> 
+
+           </div><!--col-md-3-->
         </div><!--./row-->
         
       </div>
@@ -1429,7 +1601,7 @@
                     <div class="col-md-12 p-1">
                       <h2 class="cat-title">বিনোদন</h2>
                     </div>
-                    <div class="col-md-6 p-1">
+                    <div class="col-md-6 col-12 p-1 mobile_1">
                      <a href="post.html">
                       <div class="featured-video-post">
                         <img src="https://via.placeholder.com/580x400" alt="wpnews" class="img-fluid img-thumbnail">
@@ -1440,7 +1612,7 @@
                     </div>
                     <div class="col-md-6">
                       <div class="row featured-video-left">
-                        <div class="col-md-6  p-1">
+                        <div class="col-md-6 col-6  p-1">
                          <a href="post.html">
                             <div class="featured-video-post">
                              <img src="https://via.placeholder.com/300x180" alt="wpnews" class="img-fluid img-thumbnail">
@@ -1449,7 +1621,7 @@
                            </div>
                           </a> 
                         </div>
-                        <div class="col-md-6  p-1">
+                        <div class="col-md-6 col-6 p-1">
                          <a href="post.html">
                             <div class="featured-video-post">
                              <img src="https://via.placeholder.com/300x180" alt="wpnews" class="img-fluid img-thumbnail">
@@ -1458,7 +1630,7 @@
                            </div>
                           </a> 
                         </div>
-                        <div class="col-md-6  p-1">
+                        <div class="col-md-6 col-6 p-1">
                          <a href="post.html">
                             <div class="featured-video-post">
                              <img src="https://via.placeholder.com/300x180" alt="wpnews" class="img-fluid img-thumbnail">
@@ -1467,7 +1639,7 @@
                            </div>
                           </a> 
                         </div>
-                        <div class="col-md-6 p-1 ">
+                        <div class="col-md-6 col-6 p-1 ">
                          <a href="post.html">
                             <div class="featured-video-post">
                              <img src="https://via.placeholder.com/300x180" alt="wpnews" class="img-fluid img-thumbnail">
@@ -1493,7 +1665,7 @@
         </div><!--/categories-sec-five--> 
             <div class="categories-sec-six">            
               <div class="row">
-                <div class="col-md-12 p-0">
+                <div class="col-md-12 p-0 mobile_1">
                   
                   <div class="container">
                    
@@ -1520,37 +1692,37 @@
 
                     <div class="col-md-4">                     
                        <div class="row featured-post-sm">
-                         <div class="col-xl-5 col-md-6 p-1">
+                         <div class="col-xl-5 col-md-6 col-6 p-1">
                            <img src="https://images.unsplash.com/photo-1577128066804-68855a8d854b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1076&q=80" alt="wpnews" class="img-fluid img-thumbnail">
                          </div>
-                         <div class="col-xl-7 col-md-6 p-1">
+                         <div class="col-xl-7 col-md-6 col-6 p-1">
                             <h3 class="featured-post-title-sm">ছেলে হত্যার বিচার দেখে যেতে পারলেন না অধ্যাপক অজয় রায়.</h3>
 
                          </div>
                       </div>                     
                        <div class="row featured-post-sm">
-                         <div class="col-xl-5 col-md-6 p-1">
+                         <div class="col-xl-5 col-md-6 col-6 p-1">
                            <img src="https://images.unsplash.com/photo-1577128066804-68855a8d854b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1076&q=80" alt="wpnews" class="img-fluid img-thumbnail">
                          </div>
-                         <div class="col-xl-7 col-md-6 p-1">
+                         <div class="col-xl-7 col-md-6 col-6 p-1">
                             <h3 class="featured-post-title-sm">ছেলে হত্যার বিচার দেখে যেতে পারলেন না অধ্যাপক অজয় রায়.</h3>
 
                          </div>
                       </div>                       
                        <div class="row featured-post-sm">
-                         <div class="col-xl-5 col-md-6 p-1">
+                         <div class="col-xl-5 col-md-6 col-6 p-1">
                            <img src="https://images.unsplash.com/photo-1577128066804-68855a8d854b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1076&q=80" alt="wpnews" class="img-fluid img-thumbnail">
                          </div>
-                         <div class="col-xl-7 col-md-6 p-1">
+                         <div class="col-xl-7 col-md-6 col-6 p-1">
                             <h3 class="featured-post-title-sm">ছেলে হত্যার বিচার দেখে যেতে পারলেন না অধ্যাপক অজয় রায়.</h3>
 
                          </div>
                       </div>                       
                        <div class="row featured-post-sm">
-                         <div class="col-xl-5 col-md-6 p-1">
+                         <div class="col-xl-5 col-md-6 col-6 p-1">
                            <img src="https://images.unsplash.com/photo-1577128066804-68855a8d854b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1076&q=80" alt="wpnews" class="img-fluid img-thumbnail">
                          </div>
-                         <div class="col-xl-7 col-md-6 p-1">
+                         <div class="col-xl-7 col-md-6 col-6 p-1">
                             <h3 class="featured-post-title-sm">ছেলে হত্যার বিচার দেখে যেতে পারলেন না অধ্যাপক অজয় রায়.</h3>
 
                          </div>
@@ -1560,19 +1732,19 @@
 
                     <div class="col-md-3 p-1">
                       <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-12">
                           <div class="featured-img post-title-inside-box">
                             <img src="https://via.placeholder.com/300x160" alt="wpnews" class="img-fluid img-thumbnail">
                             <h3 class="post-title-inside-title">ছেলে হত্যার বিচার দেখে যেতে পারলেন না অধ্যাপক অজয় রায়.</h3> 
                           </div>  
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-12">
                           <div class="featured-img post-title-inside-box">
                             <img src="https://via.placeholder.com/300x160" alt="wpnews" class="img-fluid img-thumbnail">
                             <h3 class="post-title-inside-title">ছেলে হত্যার বিচার দেখে যেতে পারলেন না অধ্যাপক অজয় রায়.</h3> 
                           </div>  
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-12">
                           <div class="featured-img post-title-inside-box">
                             <img src="https://via.placeholder.com/300x160" alt="wpnews" class="img-fluid img-thumbnail">
                             <h3 class="post-title-inside-title">ছেলে হত্যার বিচার দেখে যেতে পারলেন না অধ্যাপক অজয় রায়.</h3> 
@@ -1961,11 +2133,6 @@
 
 
  
- 
-
- 
- 
- 
 
     
     <footer class="footer-area-one">
@@ -2063,6 +2230,7 @@
       <script src="assets/javascript/main.js"></script>
 
       <script>startTicker('ticker-box', {speed:15, delay:100});</script>
+ 
 
     </body>
   </html>
