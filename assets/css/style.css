@@ -104,6 +104,62 @@ html, body {
       width: 100%;
       height: 65px;
       object-fit: cover; } }
+@media only screen and (max-width: 767px) {
+  /*--==responsive classes for mobile =========--*/
+  .mobile_1 {
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
+
+  .p-left_m {
+    padding-left: 1rem !important; }
+
+  .p-right_m {
+    padding-right: 1rem !important; } }
+/*===============================================
+ --------------------   top-section-on
+=================================================*/
+.top-section-big img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  overflow: hidden; }
+
+.top-section-right img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  overflow: hidden; }
+
+.top-section-content img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  overflow: hidden; }
+
+.tab-thumbs-wpnews img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  overflow: hidden; }
+
+.categories-sec-one .featured-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  overflow: hidden; }
+
+.categories-sec-tow .featured-img img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  overflow: hidden; }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .top-section-content img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    overflow: hidden; } }
 .horizontal-ad-section img {
   width: 100%; }
 
@@ -175,20 +231,26 @@ html, body {
   left: 0;
   background-color: #dee2e6cc;
   z-index: 1;
-  display: none; }
+  display: none;
+  transition: height 350ms ease-in-out; }
   .fly-menu .fly-menu-wrapper {
     margin: 0 auto;
     width: 100%;
     height: 450px;
     background-color: #fff;
-    z-index: 9; }
+    z-index: 9;
+    -webkit-transition: 0.9s;
+    -moz-transition: 0.9s;
+    -ms-transition: 0.9s;
+    -o-transition: 0.9s;
+    transition: 0.9s;
+    transition: height 350ms ease-in-out; }
   .fly-menu .fly-menu-top {
     margin-top: 20px; }
     .fly-menu .fly-menu-top ul {
-      display: inline-block;
-      text-align: center; }
+      display: inline-block; }
       .fly-menu .fly-menu-top ul li {
-        margin-bottom: 7px; }
+        margin-bottom: 8px; }
   .fly-menu .fly-menu-top {
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
@@ -218,6 +280,12 @@ html, body {
 .logo-area-one h5 {
   font-size: 15px; }
 
+@media only screen and (max-width: 992px) {
+  .desktop-version {
+    display: none; } }
+@media only screen and (min-width: 991px) {
+  .mobile-menu {
+    display: none; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .main-menu-one {
     margin: 15px 0 0 25px; }
@@ -232,7 +300,10 @@ html, body {
     margin-top: 5px; } }
 @media only screen and (max-width: 767px) {
   .fly-menu .fly-menu-wrapper {
-    height: 100%; }
+    height: 100%;
+    padding: 0;
+    overflow: scroll;
+    overflow-x: hidden; }
 
   .main-menu-one {
     display: none; }
@@ -241,10 +312,12 @@ html, body {
     padding: 10px 0px; }
     .fly-menu .fly-menu-top ul li a {
       padding: 1px;
-      color: red;
       text-align: center;
-      font-size: 14px;
+      font-size: 18px;
       margin: 5px; }
+
+  .fly-menu .fly-menu-bottom span {
+    margin-left: 11px; }
 
   .header-bottom-one .date-area p {
     font-size: 14px;
@@ -265,9 +338,6 @@ html, body {
   background: #e74c3c;
   bottom: 0;
   left: 0; }
-.categories-sec .featured-more-posts {
-  float: right;
-  color: #026DBD; }
 .categories-sec .featured-video-post {
   position: relative; }
   .categories-sec .featured-video-post h3 {
@@ -327,6 +397,15 @@ html, body {
     padding: 10px 5px;
     margin: 5px 0 !important; }
 
+.categories-sec .side-bar .side-bar-add {
+  position: absolute; }
+  .categories-sec .side-bar .side-bar-add h3 {
+    padding-left: 15px; }
+
+.featured-more-posts {
+  float: right;
+  color: #777777; }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .categories-sec .featured-video-post h3 {
     position: absolute;
@@ -382,22 +461,50 @@ html, body {
 ---------------------------------------------
 cols    1     2      3
 px      68    160    252    */
-.top-section-one .top-section-big {
+@media only screen and (min-width: 768px) {
+  #accordion {
+    display: none; } }
+@media only screen and (max-width: 767px) {
+  .top-section-right .post-title-inside-title {
+    position: static;
+    margin: 10px 5px;
+    font-size: 15px; }
+
+  #accordion .card {
+    border-width: 0px !important; }
+
+  .categories-sec-four .mobile {
+    padding-left: 10px !important;
+    padding-right: 10px !important; }
+
+  .categories-sec-five .featured-video-post h3 {
+    position: absolute;
+    bottom: 15px;
+    font-size: 16px;
+    left: 10px;
+    right: 0; } }
+[data-toggle="collapse"] .fa:before {
+  content: "\f139"; }
+
+[data-toggle="collapse"].collapsed .fa:before {
+  content: "\f13a"; }
+
+.top-section-one .top-section-big, .wp-news_single-post .top-section-big {
   position: relative; }
-  .top-section-one .top-section-big h3 {
+  .top-section-one .top-section-big h3, .wp-news_single-post .top-section-big h3 {
     position: absolute;
     bottom: 15px;
     left: 15px; }
-.top-section-one .nav-tabs {
+.top-section-one .nav-tabs, .wp-news_single-post .nav-tabs {
   border: 0px; }
-.top-section-one .nav-tabs .nav-link {
+.top-section-one .nav-tabs .nav-link, .wp-news_single-post .nav-tabs .nav-link {
   background-color: #1e3042;
   color: #fff;
   border: 0px solid #e74c3c; }
-.top-section-one .nav-link:focus {
+.top-section-one .nav-link:focus, .wp-news_single-post .nav-link:focus {
   text-decoration: none;
   color: #777777; }
-.top-section-one .tab-title-wpnews {
+.top-section-one .tab-title-wpnews, .wp-news_single-post .tab-title-wpnews {
   font-size: 22px; }
 
 .nav-tabs .nav-item {

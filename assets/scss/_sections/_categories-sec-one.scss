@@ -8,10 +8,7 @@
 		padding: 9px 0 3px 11px;
 		color: $white_color;
 		border-left:3px solid $primary_color;
-		 
- 
 	}
-
 
 	.cat-title::after {
 			position: absolute;
@@ -21,14 +18,7 @@
 			background: $primary_color;
 			bottom: 0;
 			left: 0;
-     }
-
-
-
-	.featured-more-posts{
-		float: right;
-		color: #026DBD;
-	}
+     } 
  
    .featured-video-post{
       position: relative;
@@ -74,19 +64,16 @@
     }    
 }
 
-.categories-sec-six{
-	
+.categories-sec-six{ 
 	.featured-post-sm{
          margin:0 2px 5px 2px;
          padding:5px;
-         background-color: #F0F0ED;
-
+         background-color: #F0F0ED; 
         img{
         	width:100%;
         	height: 80px;
         	object-fit: cover;
-        } 
-         
+        }     
 	}
 }
 
@@ -96,25 +83,21 @@
 		height: 370px;
 		object-fit: cover;
 	}
-}
-
+} 
 .vide-post-img{
 	background-color: gray;
 	position: relative;
  }
-	.video-post-icon{
-
+	.video-post-icon{ 
 		position: absolute;
 		left: 20px;
 		bottom:20px;
 		font-size: 1.5rem;
 		color: $gray_color;
 	}
-.categories-content-bottom{
-
-	padding: 50px 0;  
-	background-color: $border-color; 
-
+.categories-content-bottom{ 
+		padding: 50px 0;  
+		background-color: $border-color; 
 	.featured-post-title{ 
 		background-color: $white_color;
 		padding: 10px 5px;
@@ -124,16 +107,23 @@
 
 .categories-sec .side-bar{
    
-   .featured-post-details-sm{
-
+   .featured-post-details-sm{ 
    }
-
    .card-header{
        
    }
+     .side-bar-add{
+      position: absolute; 
+      h3{
+      	padding-left: 15px;
+      }
+   } 
 }
 
-
+.featured-more-posts{
+	float: right;
+	color: $gray_color;
+} 
 
  @media only screen and (min-width: 768px) and (max-width: 991px) {
 
@@ -146,18 +136,16 @@
        }
      }
  	 .featured-video-left{
- 		  h3{
-               
+ 		  h3{ 
                font-size: 15px;
  		    }	
  		  }
- 		}   
-   
+ 		}    
    .categories-sec-four{
   
-    p{ 
-       font-size: 14px;
-    }
+		p{ 
+	    	font-size: 14px;
+		}
 
     .featured-post-title {
 		position: absolute; 
@@ -226,8 +214,6 @@
 
 
 
-
-
 /*		Mobile Layout: 320px.
 		Gutters: 24px.
 		Outer margins: 34px.
@@ -236,7 +222,55 @@
 cols    1     2      3
 px      68    160    252    */
 
+@media only screen and (min-width: 768px) {
+  	#accordion{
+  		display: none; 
+  	}  
+}
 @media only screen and (max-width: 767px) {
+
+	.top-section-right{
+		.post-title-inside-title{
+           position: static;
+           margin: 10px 5px;
+           font-size: 15px;
+	    }
+	} 
+  	#accordion{
+  		.card{
+           border-width: 0px!important;
+  		}
+  	}
+
+.categories-sec-four{
+    .mobile{
+       padding-left: 10px!important;
+       padding-right:10px!important;
+    } 
+ } 	
+.featured-img{
+ 
+}
+
+
+.categories-sec-five{
+  .featured-video-post h3 {
+    position: absolute;
+    bottom: 15px;
+    font-size: 16px;
+    left: 10px;
+    right: 0;
+   } 	
+} 
 
 }
 
+
+
+ [data-toggle="collapse"] .fa:before {  
+  content: "\f139";
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+  content: "\f13a";
+}

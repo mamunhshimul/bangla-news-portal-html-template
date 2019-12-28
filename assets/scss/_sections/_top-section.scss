@@ -1,16 +1,12 @@
-.top-section-one{
+.top-section-one, .wp-news_single-post{
 
     .top-section-big{
          position: relative; 
-
-
          h3{
-
-				position: absolute;
-				bottom: 15px;
-				left: 15px; 
+            position: absolute;
+            bottom: 15px;
+            left: 15px; 
          }
-     
      }
      .top-section-right{
 
@@ -135,7 +131,8 @@ px      68    160    252    */
         .top-sec-middle{
            
 
-           .featured-post-title{ 
+           .featured-post-title{
+
               font-size: 15px;
            } 
         }
