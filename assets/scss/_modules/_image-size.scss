@@ -1,0 +1,53 @@
+/*===============================================
+ --------------------   top-section-on
+=================================================*/
+
+ 
+.top-section-big img{
+	width: 100%;
+    height: 310px;
+    object-fit: cover;
+    overflow:hidden;
+}
+.top-section-right img{
+	width: 100%;
+    height: 150px;
+    object-fit: cover;
+    overflow:hidden; 
+}
+.top-section-content img{
+	width: 100%;
+    height: 150px;
+    object-fit: cover;
+    overflow:hidden;  
+}
+.tab-thumbs-wpnews img{
+	width: 100%;
+    height: 80px;
+    object-fit: cover;
+    overflow:hidden;   
+}
+.categories-sec-one .featured-img img{
+	width: 100%;
+    height: 220px;
+    object-fit: cover;
+    overflow:hidden;  
+}
+.categories-sec-tow .featured-img img{
+	width: 100%;
+    height: 150px;
+    object-fit: cover;
+    overflow:hidden;  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .top-section-content img{
+	width: 100%;
+    height: 120px;
+    object-fit: cover;
+    overflow:hidden;  
+  }
+ 
+
+}
