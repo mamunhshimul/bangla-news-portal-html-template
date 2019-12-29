@@ -5,13 +5,15 @@
          h3{
             position: absolute;
             bottom: 15px;
-            left: 15px; 
+            left: 15px;
+            font-weight: bold;
+            font-size: 25px;
+            color:$white_color; 
          }
      }
      .top-section-right{
 
      }
- 
      .nav-tabs {
          border: 0px; 
      }
@@ -19,9 +21,7 @@
 
      	background-color: $title_color;
      	color: $white_color;
-        border: 0px solid $primary_color;
-  
-
+      border: 0px solid $primary_color;
      } 
      .nav-link:focus {
 
@@ -31,36 +31,28 @@
    .tab-title-wpnews{
       font-size:22px;
    }
-
 }
-
 .nav-tabs .nav-item {
     margin-bottom: -1px;
     width:48%;
     text-align: center;
 } 
- 
-.nav-tabs {
 
+.nav-tabs {
     .nav-link{
         border-radius: 0px;
     }
-
     a.nav-link.active.top-tab-title {
         background: $black_color !important;
         color: $gray_color;
     }
 } 
 
-
- 
-
-
+  
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
      
-     .top-section-one{
-            
+     .top-section-one,.wp-news_single-post { 
            .featured-post-title:first-child{ 
               margin: 0;
            } 
@@ -80,26 +72,18 @@
            } 
         }
 
-        .tab-content{
-            
-            .tab-title-wpnews{
-
-                h3{ 
-
-                  font-size: 14px;
-                       
-                }
-                 
+        .tab-content{ 
+            .tab-title-wpnews{ 
+                h3{  
+                  font-size: 16px;
+                  margin-left: 8px;   
+                } 
            }
-           .tab-thumbs-wpnews{}
- 
-
+           .tab-thumbs-wpnews{} 
         } 
         .margin-bt{
           padding-right:0px;
         }
-
-   
      }
      
 }
@@ -145,6 +129,7 @@ px      68    160    252    */
 
                   font-size: 20px;
                   margin-top: 5px;
+                  margin-left: 10px;
                        
                 }
                  

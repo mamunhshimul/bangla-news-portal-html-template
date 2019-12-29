@@ -64,16 +64,17 @@
     }    
 }
 
-.categories-sec-six{ 
+.categories-sec-seaven{ 
 	.featured-post-sm{
          margin:0 2px 5px 2px;
          padding:5px;
-         background-color: #F0F0ED; 
-        img{
-        	width:100%;
-        	height: 80px;
-        	object-fit: cover;
-        }     
+         background-color: #F0F0ED;    
+	} 
+	.featured-post-sm:first-child{
+      margin-top: 7px;
+	}
+	.post-title-inside-box{
+       margin-bottom: 5px;  
 	}
 }
 
@@ -141,10 +142,9 @@
  		    }	
  		  }
  		}    
-   .categories-sec-four{
-  
+   .categories-sec-four{ 
 		p{ 
-	    	font-size: 14px;
+	       font-size: 14px;
 		}
 
     .featured-post-title {
@@ -188,6 +188,15 @@
          }   
     }
   }
+
+  .categories-sec-seaven{
+     .featured-post-title-sm{
+        margin: 0;
+        
+     }	
+  }
+
+  
 
  .gallery-area{
 	.header-slider-thumb{
@@ -234,6 +243,8 @@ px      68    160    252    */
            position: static;
            margin: 10px 5px;
            font-size: 15px;
+           color: $black_color;
+           font-weight: 400;
 	    }
 	} 
   	#accordion{
