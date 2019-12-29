@@ -386,46 +386,6 @@ html, body {
       font-size: 13px;
       color: #777777; }
 
-.cat-title {
-  font-size: 1.6rem;
-}
-
-.featured-post-details-title {
-  font-size: 1.3rem;
-  padding: 0 0.5em;
-  margin-bottom: 10px;
-}
-.featured-post-details-desc {
-  font-size: 0.95rem;
-  text-align: justify;
-}
-
-.cat-posts {
-  overflow: hidden;
-  height: auto;
-  padding: 10px 0;
-}
-.cat-posts-img img {
-  float: left;
-  width: 30%;
-  margin-right: 10px;
-  border: 1px solid #d2d5db;
-  padding: 2px;
-  background: #fff;
-}
-.cat-posts-title {
-  font-size: 1.1rem;
-  line-height: 23px;
-  font-weight: 500;
-  padding: 3px;
-}
-.cat-posts-title a {
-  color: #181818;
-}
-.cat-posts-title a:hover {
-  color: #e74c3c;
-}
-
 /* /.footer top */
 .footer-area-one {
   color: #fff;
@@ -458,13 +418,7 @@ ul.footer-link {
 .v-line {
   height: 1px;
   width: 96%;
-<<<<<<< HEAD
-  background-color: #fff;
-}
-=======
-  margin: auto;
   background-color: #fff; }
->>>>>>> mamun
 
 .footer-v-line {
   margin-top: 40px; }
