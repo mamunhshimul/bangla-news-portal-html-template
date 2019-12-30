@@ -28,8 +28,12 @@
                 <div class="row padding-tb"> 
                     <div class="col-xl-3 col-md-3 col-6">
                         <div class="logo-area-one">
-                            <!-- <h1>WP News <br/> <span>Wordpress news template</span></h1> -->
-                            <a href="#"> <h1> <img src="assets/images/logo.png" alt="wpnews"/><br/>  </h1> </a>
+                            <!-- <h1>WP News <br/> <span>Wordpress news template</span></h1> --> 
+                            <a href="<?php echo site_url(); ?>"> 
+                               <h1><?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo();
+                                          } ?> <br/>  
+                                </h1> 
+                            </a>
                             <h5> The News Publisher For Everyone</h5>
                         </div><!--/.logo-->
                     </div><!--/.end col md 6-->
