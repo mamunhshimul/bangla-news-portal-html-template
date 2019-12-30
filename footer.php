@@ -95,7 +95,7 @@
 
       <script>startTicker('ticker-box', {speed:15, delay:100});</script>
  
-
+<?php wp_footer();?>
     </body>
   </html>
   

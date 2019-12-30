@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="style.css">
 
+    <?php wp_head();?>
+
 </head>
 <body <?php body_class(); ?>>
     <header class="header-area-one">
