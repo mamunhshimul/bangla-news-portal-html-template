@@ -2216,11 +2216,11 @@
           <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <p class="texts-left">&copy; wp-news all right reserved</p>
+                <p class="texts-left">&copy; WP NEWS All Right Reserved</p>
               </div>
               <div class="col-md-6">
                 <p class="texts-right">
-                  Design & Developed by <a href="//actualw3.com">actualW3</a>
+                  Design & Developed by <a href="//devute.com">Devute</a>
                 </p>
               </div>
             </div>
