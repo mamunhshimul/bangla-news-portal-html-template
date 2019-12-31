@@ -68,7 +68,3 @@ function startTicker(id,param){
 	}	
 	iterateTickerElement(trans_width);
 }
-
-
- 
- startTicker('ticker-box', {speed:7, delay:1000}); 

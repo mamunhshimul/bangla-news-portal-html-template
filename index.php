@@ -7,7 +7,7 @@
           <div class="col-md-8">
             <div class="row">
                <div class="col-xl-8 col-md-12  p-1"> 
-                    <a href="php"> 
+                    <a href="<?php the_permalink(); ?>">
                      <div class="top-section-big post-title-inside-box">
                         <img class="img-thumbnail" src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixlib=rb-1.2.1&auto=format&fit=crop&w=1446&q=80" alt="wpnews">
 <!--                         <img class="img-thumbnail" src="https://via.placeholder.com/500x310" alt="wpnews">
@@ -19,7 +19,7 @@
                 <div class="col-xl-4 col-md-12  p-1">
                      <div class="row ">
                         <div class="col-xl-12 col-md-6 col-6 top-sec-ipad">
-                          <a href="php">
+                          <a href="post.html">
                             <div class="top-section-right post-title-inside-box">
                                  <img class="img-thumbnail" src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="wpnews">
                                 <h3 class="post-title-inside-title">ম্যাচে মাত্র একটিতে জয় পাওয়া ওয়েস্ট হ্যাম</h3><!--<?php echo wp_trim_words( get_the_title(), 5 ); ?>-->        
