@@ -6,20 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wp News - Professional WordPress Theme For News Publisher</title>
     
-    <!-- bootstrap css file -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-
-    <!-- fontawesome css -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-   
-    <!-- custom fonts -->
-    <link rel="stylesheet" href="assets/fonts/custom/custom-fonts.css">
-
-
-    <!-- custom stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="style.css">
+ 
+  
 
     <?php wp_head();?>
 

@@ -7,7 +7,7 @@
           <div class="col-md-8">
             <div class="row">
                <div class="col-xl-8 col-md-12  p-1"> 
-                    <a href="post.html">
+                    <a href="<?php the_permalink(); ?>">
                      <div class="top-section-big post-title-inside-box">
                         <img class="img-thumbnail" src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixlib=rb-1.2.1&auto=format&fit=crop&w=1446&q=80" alt="wpnews">
 <!--                         <img class="img-thumbnail" src="https://via.placeholder.com/500x310" alt="wpnews">
