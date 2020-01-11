@@ -20,25 +20,18 @@
                     <div class="col-xl-3 col-md-3 col-6">
                         <div class="logo-area-one">
                             <!-- <h1>WP News <br/> <span>Wordpress news template</span></h1> -->
-                            <a href="#"> <h1> <img src="assets/images/logo.png" alt="wpnews"/><br/>  </h1> </a>
+                            <a href="#"> <h1> <img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/logo.png" alt="wpnews"/><br/>  </h1> </a>
                             <h5> The News Publisher For Everyone</h5>
                         </div><!--/.logo-->
                     </div><!--/.end col md 6-->
                     <div class="col-xl-8 col-md-7 col-2">
-                        <div class="main-menu-one">
-                            <ul>
-                                <li><a href="#">হোম</a></li>
-                                <li><a href="#">সিলেট</a></li>
-                                <li><a href="#">খেলাধুলা</a></li>
-                                <li><a href="#">বাংলাদেশ</a></li>
-                                <li><a href="#">রাজধানী</a></li>
-                                <li><a href="#">হোম</a></li>
-                                <li><a href="#">সিলেট</a></li>
-                                <li><a href="#">আন্তর্জাতিক</a></li>
-                                <li><a href="#">রাজনীতি</a></li>
-                                <li><a href="#">বিনোদন</a></li>
-                            </ul>
-                        </div><!--/.main menu-->
+
+                       <?php wp_nav_menu( array(
+                         'container'       => 'div',
+                         'container_class' => 'main-menu-one',
+                         'theme_location'  => 'wp_main-menu'
+                       ));
+                       ?> 
                     </div><!--/.end col md 8-->
 
                     <div class="col-xl-1 col-md-2 col-4 header-top-right-side text-right">
@@ -65,7 +58,7 @@
                     <div class="col-xl-3 col-md-3 col-6">
                         <div class="logo-area-one">
                             <!-- <h1>WP News <br/> <h5>Wordpress news template</h5></h1> -->
-                            <a href="#"> <h1> <img src="assets/images/logo.png" alt="wpnews"/><br/>  </h1> </a>
+                            <a href="#"> <h1> <img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/logo.png" alt="wpnews"/><br/>  </h1> </a>
                              <h5> The News Publisher For Everyone</h5>
                         </div><!--/.logo-->
                     </div><!--/.end col md 6-->
@@ -81,57 +74,28 @@
                     <div class="col-md-12">
                        <div class="fly-menu-top">
 
-                           <div class="row">
-                               <div class="col-md-2 col-6">
-                                  <ul>
-                                    <li><a href="#">প্রচ্ছদ</a></li>
-                                    <li><a href="#">আন্তর্জাতিক</a></li>
-                                    <li><a href="#">মতামত</a></li>
-                                    <li><a href="#">শিক্ষা</a></li>
-                                  </ul>
-                               </div>
-                               <div class="col-md-2 col-6">
-                                  <ul>
-                                    <li><a href="#">বানিজ্য</a></li>
-                                    <li><a href="#">বিনোদন</a></li>
-                                    <li><a href="#">ফিচার</a></li>
-                                    <li><a href="#">শিল্প ও সাহিত্য</a></li>
-                                  </ul>
-                               </div>
-                               <div class="col-md-2 col-6">
-                                  <ul>
-                                    <li><a href="#">শেয়ার বাজার</a></li>
-                                    <li><a href="#">চাকরি</a> </li>
-                                    <li><a href="#">রাজনীতি</a> </li>
-                                    <li><a href="#">পাঁচমিশালি</a> </li>
-                                  </ul>
-                               </div>
-                               <div class="col-md-2 col-6">
-                                  <ul>
-                                    <li><a href="#">চাকরি</a> </li>
-                                    <li><a href="#">অর্থনীতি</a> </li>
-                                    <li><a href="#">আবহাওযা</a> </li>
-                                    <li><a href="#">বিজ্ঞান</a> </li>
-                                  </ul>
-                               </div>
-                               <div class="col-md-2 col-6">
-                                  <ul>
-                                    <li><a href="#">প্রবাস</a> </li>
-                                    <li><a href="#">আদালত</a> </li>
-                                    <li><a href="#">জীবন-যাপন</a> </li>
-                                    <li><a href="#">সংস্কৃতি</a> </li>
-                                  </ul>
-                               </div>
-                               <div class="col-md-2 col-6">
-                                  <ul>
-                                    <li><a href="#">ছবি</a></li>
-                                    <li><a href="#">সোশ্যাল মিডিয়া</a></li>
-                                    <li><a href="#">দৃষ্টিপাত</a> </li>
-                                    <li><a href="#">বিবিধ</a> </li>
-                                  </ul>
-                               </div>
-                           </div>  
- 
+
+                       <?php wp_nav_menu( array(
+
+                             'theme_location'  => 'wp_flying-menu', 
+                             'container'       => false,
+                             'container_class' => '',
+                             'container_id'    => '',
+                             'menu'            => '',
+                             'menu_class'      => 'menu',
+                             'menu_id'         => '',
+                             'echo'            => true,
+                             'fallback_cb'     => 'wp_page_menu',
+                             'before'          => '',
+                             'after'           => '', 
+                             'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                             'item_spacing'    => 'preserve',
+                             'depth'           => 0,
+                             'walker'          => '',
+                       ));
+                       ?> 
+
+
                        </div>  <!--fly-menu-top-->
                      </div>
                      <div class="col-md-12">
@@ -191,35 +155,74 @@
              </div>   
            </div><!--/.fly-menu-wrapper--> 
         </div><!--/.fly-menu-->
-        <div class="container"> 
-             <div class="header-top-one mobile-menu"> 
-                <div class="row padding-tb"> 
-                    <div class="col-xl-3 col-md-3 col-6">
+        <div class="container">
+          
+ <div class="mobile-menu">
+     <div class="row mobile-menu-head">
+        <div class="col-sm-6 col-6">
+          
                         <div class="logo-area-one">
-                            <!-- <h1>WP News <br/> <span>Wordpress news template</span></h1> -->
-                            <a href="#"> <h1> <img src="assets/images/logo.png" alt="wpnews"/><br/>  </h1> </a>
+                            <!-- <h1>WP News <br/> <h5>Wordpress news template</h5></h1> -->
+                            <a href="#"> <h1> <img src="<?php echo esc_url(get_stylesheet_directory_uri());?>/assets/images/logo.png" alt="wpnews"/><br/>  </h1> </a>
                             <h5> The News Publisher For Everyone</h5>
                         </div><!--/.logo-->
-                    </div><!--/.end col md 6-->
-                    <div class="col-xl-8 col-md-7 col-2"> 
-                    </div><!--/.end col md 8-->
-
-                    <div class="col-xl-1 col-md-2 col-4 header-top-right-side text-right">
-                        <span class="flymenu-icon"><i class="fa fa-bars"></i></span>
-                        <span class="top-search-icon"><i class="fa fa-search"></i></span> 
-                    </div><!--/.end col md 1--> 
-                </div> <!--/.row-->  
-            
-             <div class="wpnews-search-box">
-                <div class="container text-center">
-                      <input type="search" class="nav-search-box" placeholder="কি খুঁজতে চান">
-                      <span class="top-search-icon"><i class="fa fa-search"></i></span> 
-                      <span class="close-search-box"><i class="fa fa-times"></i></span> 
-                 </div>
-              </div><!--/.wpnews-search-boxp-->  
-            </div> <!--/.header top one-->
+        </div>
+        <div class="col-sm-6 col-6 mobile-icon">
+              <span class="float-right open-mobile-menu"><i class="fa fa-bars"></i></span>  
+         <!--      <span class="float-right close-mobile-menu"><i class="fa fa-times"></i></span> -->  
+        </div>
+     </div>
+     <div class="row">
+        <div class="col-md-12">
+             <div class="mobile-full-menu">
+               <ul id="nagigation">
+                 <li style="cursor: pointer !important;"><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#" class="dropdown-open">বাংলাদেশ >></a>
  
-       </div><!--/.flying-header-top-one-->
+          <ul class="dropdown-mobile-menu">
+            <li><a href="">Item 11</a></li>
+            <li><a href="">Item 12</a></li>
+            <li><a href="">Item 13</a></li>
+            <li><a href="">Item 14</a></li>
+          </ul>
+
+                 </li>
+
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li> 
+                 <li><a href="#">বাংলাদেশ</a></li>  
+               </ul> 
+             </div>
+ 
+        </div>
+       
+     </div>
+ 
+  </div><!--/.mobile-menu-->
+ 
+      </div><!--/.container-->
                
         </div>
         </div>

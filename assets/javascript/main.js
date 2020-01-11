@@ -93,22 +93,45 @@ var close_fl = document.querySelector('.fly-menu');
 
 
  
+//===========mobile menu
+
+
+
+  var mobile_nav = document.querySelector('.mobile-full-menu');
+
+ document.querySelector('.open-mobile-menu').addEventListener("click", function(){  
+
+      if ( mobile_nav.style.display == '' || mobile_nav.style.display == "none") {
+
+           mobile_nav.style.display = "block"; 
+       } else { 
+
+         mobile_nav.style.display = "none";
+        } 
+ });
+
+ //===========mobile menu dropdown
 
 
 
 
+  var dropdown_o = document.querySelector('.dropdown-mobile-menu');
 
+ document.querySelector('.dropdown-open').addEventListener("click", function(){  
 
+      if ( dropdown_o.style.display == '' || dropdown_o.style.display == "none") {
 
-  
+           dropdown_o.style.display = "block"; 
+       } else { 
 
+         dropdown_o.style.display = "none";
+        } 
+ });
 
+ 
+ 
 
-
-
-
-
-
+ 
 
 
 

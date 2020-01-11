@@ -15,10 +15,10 @@ function boxCssAndJs(){
      wp_enqueue_style('bootstrap'); 
   wp_register_style('fontawesome','//use.fontawesome.com/releases/v5.5.0/css/all.css');    
     wp_enqueue_style('fontawesome'); 
-  wp_register_style('custom-fonts', get_template_directory_uri().'/html/assets/fonts/custom/custom-fonts.css',null,time());
+  wp_register_style('custom-fonts', get_template_directory_uri().'/assets/fonts/custom/custom-fonts.css',null,time());
     wp_enqueue_style('custom-fonts');
 
-  wp_register_style('maincss', get_template_directory_uri().'/html/assets/css/style.css');        wp_enqueue_style('maincss');
+  wp_register_style('maincss', get_template_directory_uri().'/assets/css/style.css');        wp_enqueue_style('maincss');
 
   wp_register_style('font-awesome', get_template_directory_uri().'syle.css');    wp_enqueue_style('font-awesome');
  
